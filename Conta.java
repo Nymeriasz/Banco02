@@ -1,15 +1,9 @@
-package Banco02;
-
 public abstract class Conta {
     protected double saldo;
 
-    public void creditar(double valor){
-        this.saldo+=valor;
-    }
-    public void debitar(double valor){
-        this.saldo-=valor;
-    }
-    
+    public abstract void creditar(double valor);
+    public abstract void debitar(double valor);
+
     public void mostrarDados(){
         System.out.println(saldo);
     }
@@ -17,3 +11,5 @@ public abstract class Conta {
     public void setSaldo(double saldo){
         this.saldo=saldo;
     }
+
+}
